@@ -1,0 +1,170 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAIN_DIAG DIALOG DISCARDABLE  0, 0, 304, 263
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enigma's Diablo Trainer v1.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Change",STR_EDIT_INIT,166,25,37,14
+    PUSHBUTTON      "Exit",IDM_EXIT,254,242,50,14
+    LTEXT           "Use the modify boxes on the left to change the stats of your Diablo character.",
+                    IDC_STATIC,7,40,131,29,SS_SUNKEN
+    GROUPBOX        "Stats",IDC_STATIC,142,7,159,175,BS_CENTER
+    EDITTEXT        STR_EDITBOX,148,25,16,14
+    GROUPBOX        "Strength (0-255)",IDC_STATIC,145,15,71,27
+    GROUPBOX        "Dexterity (0-255)",IDC_STATIC,145,79,72,27
+    DEFPUSHBUTTON   "Change",DEX_EDIT_INIT,165,89,37,14
+    GROUPBOX        "Magic (0-255)",IDC_STATIC,145,47,72,27
+    GROUPBOX        "Vitality (0-255)",IDC_STATIC,145,111,72,27
+    PUSHBUTTON      "About",IDM_ABOUT,170,242,50,14
+    DEFPUSHBUTTON   "Change",MAG_EDIT_INIT,165,57,37,14
+    DEFPUSHBUTTON   "Change",VIT_EDIT_INIT,165,121,37,14
+    GROUPBOX        "Character",IDC_STATIC,7,70,131,142
+    GROUPBOX        "Name",IDC_STATIC,13,80,119,29
+    EDITTEXT        NAME_EDITBOX,27,89,51,14,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Level",IDC_STATIC,13,110,119,29
+    GROUPBOX        "Distribution Points",IDC_STATIC,13,143,119,29
+    DEFPUSHBUTTON   "Change",NAME_CHANGE_INIT,88,90,37,14
+    EDITTEXT        LEVEL_EDITBOX,66,119,13,14
+    DEFPUSHBUTTON   "Change",LEV_CHANGE_INIT,90,119,37,14
+    GROUPBOX        "Resists",IDC_STATIC,142,193,133,45
+    CONTROL         "MAX Lightning Resistance (75%)",MAX_LIGHT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,214,118,10
+    CONTROL         "MAX Fire Resistance (75%)",MAX_FIRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,204,112,10
+    CONTROL         "MAX Magic Resistance (75%)",MAX_MAGIC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,224,118,10
+    DEFPUSHBUTTON   "Change",DISTRIB_CHANGE_INIT,89,152,37,14
+    EDITTEXT        DISTRIB_EDITBOX,62,152,17,14
+    CTEXT           "0-50",IDC_STATIC,27,122,23,10
+    GROUPBOX        "Gold",IDC_STATIC,13,175,119,29
+    EDITTEXT        GOLD_EDITBOX,41,184,44,14,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "Change",GOLD_CHANGE_INIT,89,184,37,14
+    CTEXT           "0-65k",IDC_STATIC,15,186,23,10
+    CONTROL         "Lock",DISTRIB_LOCK,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,19,153,32,13
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,7,7,127,32
+    EDITTEXT        MAG2_EDITBOX,147,57,16,14
+    EDITTEXT        DEX2_EDITBOX,147,89,16,14
+    EDITTEXT        VIT2_EDITBOX,147,122,16,14
+    DEFPUSHBUTTON   "Change",HEALTH_EDIT_INIT,255,25,37,14
+    EDITTEXT        HEALTH_EDITBOX,228,25,24,14
+    GROUPBOX        "Health (0-65535)",IDC_STATIC,225,15,72,27
+    DEFPUSHBUTTON   "Change",MANA_EDIT_INIT,255,57,37,14
+    EDITTEXT        MANA_EDITBOX,228,57,24,14
+    GROUPBOX        "Mana (0-65535)",IDC_STATIC,225,47,72,27
+    DEFPUSHBUTTON   "Change",AC_EDIT_INIT,255,89,37,14
+    EDITTEXT        AC_EDITBOX,228,89,23,14
+    GROUPBOX        "Armor (0-65535)",IDC_STATIC,225,79,72,27
+    DEFPUSHBUTTON   "Change",BD_EDIT_INIT,255,121,37,14
+    EDITTEXT        BD_EDITBOX,228,122,23,14
+    GROUPBOX        "Damage (0-65535)",IDC_STATIC,225,111,72,27
+    DEFPUSHBUTTON   "Change",BD_EDIT_INIT2,255,154,37,14
+    EDITTEXT        BD_EDITBOX2,228,155,23,14
+    GROUPBOX        "% to Hit (0-65535)",IDC_STATIC,225,144,72,27
+    CONTROL         "Lock Health",LOCK_HEALTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,151,58,12
+    CONTROL         "Lock Mana",LOCK_MANA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,162,57,12
+    GROUPBOX        "Stat Locks",IDC_STATIC,145,141,72,37
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    MAIN_DIAG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+        HORZGUIDE, 256
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "edt4.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
